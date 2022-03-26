@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http: //www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/3.jpeg</argument>
+                <argument name="logo_alt" xsi:type="string">Elogic_combo</argument>
+                <argument name="logo_img_width" xsi:type="number">100</argument>
+                <argument name="logo_img_height" xsi:type="number">10</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="report.bugs" remove="true" />
+        <referenceBlock name="top.search" remove="true" />
+        <referenceContainer name="page-footer" remove="true" />
+
+    </body>
+</page>

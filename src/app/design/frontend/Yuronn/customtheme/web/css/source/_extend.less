@@ -1,0 +1,88 @@
+& when (@media-common = true) {
+    // place logo to the center of page
+
+    #html-body > div.page-wrapper > header > div.header.content > a > img {
+        height: 100px;
+        width: 100px;
+
+    }
+    //
+    // footer to black
+    #html-body > div.page-wrapper > footer {
+        background-color: black;
+    }
+
+    #html-body > div.page-wrapper > footer > div > ul > li.nav.item.current > strong,
+    #html-body > div.page-wrapper > footer > div > ul > li > a {
+        color: white;
+    }
+    .copyright {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    //change nav color
+    #store\.menu > nav,
+    #store\.menu,
+    #html-body > div.page-wrapper > header > div.panel.wrapper{
+        background-color: black;
+    }
+    #ui-id-1 > li > a {
+        color: white;
+    }
+    #ui-id-1 > li > a:hover {
+        transition: 1s;
+        transform: scale(1.1);
+    }
+//   change order of nav tabs
+    #ui-id-1 {
+        display: flex;
+    }
+    #ui-id-1 > li.level0.nav-1.category-item.first.level-top.parent.ui-menu-item {
+        order: 2;
+    }
+    #ui-id-1 > li.level0.nav-2.level-top.ui-menu-item {
+        order: 1;
+    }
+    #ui-id-1 > li.level0.nav-3.level-top.ui-menu-item {
+        order: 3;
+    }
+    #ui-id-1 > li.level0.nav-4.level-top.ui-menu-item {
+        order: 4;
+    }
+    .navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
+        color: #ff5501 !important;
+    }
+//    list phthm widget styles
+    @link-color: red; // variables
+
+    .product_list_custom_unique {
+    color: @link-color;
+    }
+    //mixins
+    .my-mixin {
+        border-radius: 25px;
+        border: 1px solid;
+    }
+    .my-other-mixin() {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .product_list_custom_unique {
+        .my-mixin();
+        .my-other-mixin();
+    }
+
+    .mixin(@color: black; @font: 10px; @marginb: 15px) {
+        color: @color;
+        font-size: @font;
+        margin-bottom: @marginb;
+    }
+    .pdp_custom_changes {
+        .mixin(@color: red; @font: 15px; @marginb: 20px);
+    }
+
+    //done with less
+
+
+}
