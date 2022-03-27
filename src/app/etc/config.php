@@ -331,6 +331,7 @@ return [
         'Dotdigitalgroup_EmailGraphQl' => 1,
         'Dotdigitalgroup_Sms' => 1,
         'Elogic_ContactFormRemoveTestThings' => 1,
+        'Elogic_MyWidget' => 1,
         'Elogic_NavMenu' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
