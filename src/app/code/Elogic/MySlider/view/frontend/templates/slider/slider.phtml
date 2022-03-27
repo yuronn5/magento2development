@@ -1,0 +1,83 @@
+
+<section class="regular slider" id="desktopg">
+
+    <div>
+        <a href="">
+            <img src='<?php echo $this->getViewFileUrl('Elogic_MySlider::images/1.jpeg'); ?>' alt="image-icon" width="300" height="100">
+            <h4 class="slider_product_title">Iphone 13</h4>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <img src='<?php echo $this->getViewFileUrl('Elogic_MySlider::images/2.jpeg'); ?>' alt="image-icon" width="300" height="100">
+            <h4 class="slider_product_title">Iphone 12</h4>
+
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <img src='<?php echo $this->getViewFileUrl('Elogic_MySlider::images/3.jpeg'); ?>' alt="image-icon" width="300" height="100">
+            <h4 class="slider_product_title">Iphone 11</h4>
+
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <img src='<?php echo $this->getViewFileUrl('Elogic_MySlider::images/4.jpeg'); ?>' alt="image-icon" width="300" height="100">
+            <h4 class="slider_product_title">Macbook Pro 13inc</h4>
+
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <img src='<?php echo $this->getViewFileUrl('Elogic_MySlider::images/5.jpeg'); ?>' alt="image-icon" width="300" height="100">
+            <h4 class="slider_product_title">Macbook Pro 16inc</h4>
+
+        </a>
+    </div>
+</section>
+
+
+<script>
+
+    require(['jquery',  'slick'], function($, slick) {
+        $(document).ready(function() {
+            $(".regular").slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 3,
+                prevArrow: false,
+                nextArrow: false,
+                slidesToScroll: 1
+            });
+        });
+    });
+    //add title before slider
+    let sliderOne = document.querySelector("#desktopg");
+    sliderOne.insertAdjacentHTML('beforebegin', '<p class="slick_slider_product_title">&dArr;&dArr;&dArr; You can choose your product here!!! &dArr;&dArr;&dArr;</p>');
+
+    //function to change color to the loop
+    let sliderProductTitle = document.querySelectorAll('.slider_product_title');
+    var div_array = [...sliderProductTitle];
+    for (var i = 0, len = div_array.length; i < len; i += 1) {
+        (function(i) {
+            let colorsOne = ['red','blue','coral','orange','black','green'];
+            let indexProd = 0;
+            setInterval(function() {
+                    div_array[i].style.setProperty('color', colorsOne[indexProd++]);
+                    indexProd %= colorsOne.length;
+            }, 1000)
+        })(i);
+    }
+
+    //function to change color to the title
+    let sliderTitle = document.querySelector('.slick_slider_product_title');
+    let colors = ['red','blue','coral','orange','black','green'];
+    let index = 0;
+    function changeColor() {
+        sliderTitle.style.setProperty('color', colors[index++]);
+        index %= colors.length;
+    }
+    let interval = setInterval(changeColor, 1000);
+
+</script>
