@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http: //www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="logo">
             <arguments>
@@ -9,10 +9,9 @@
                 <argument name="logo_img_height" xsi:type="number">10</argument>
             </arguments>
         </referenceBlock>
-        <referenceBlock name="register-link" remove="true" />
-        <referenceBlock name="report.bugs" remove="true" />
-        <referenceBlock name="top.search" remove="true" />
-        <referenceContainer name="page-footer" remove="true" />
-
+<!--        <referenceBlock name="report.bugs" remove="true" />-->
+<!--        <referenceBlock name="top.search" remove="true" />-->
+<!--        <referenceContainer name="page-footer" remove="true" />-->
+<!--        <referenceContainer name="footer-container" remove="true" />-->
     </body>
 </page>
