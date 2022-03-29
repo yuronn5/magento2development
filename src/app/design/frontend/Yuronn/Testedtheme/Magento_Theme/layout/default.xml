@@ -9,9 +9,24 @@
                 <argument name="logo_img_height" xsi:type="number">10</argument>
             </arguments>
         </referenceBlock>
-<!--        <referenceBlock name="report.bugs" remove="true" />-->
-<!--        <referenceBlock name="top.search" remove="true" />-->
-<!--        <referenceContainer name="page-footer" remove="true" />-->
-<!--        <referenceContainer name="footer-container" remove="true" />-->
+
+        <!-- created a new container and place logo and nav sections to him-->
+        <container name="logo.menu.container" as="logomenuContainer" label="Logo Menu Container" htmlTag="div" htmlClass="logo-menu-container">
+        </container>
+        <move element="logo" destination="logo.menu.container" before="-" />
+        <move element="navigation.sections" destination="logo.menu.container" after="-" />
+        <move element="logo.menu.container" destination="header-wrapper" />
+        <!-- enddddd-->
+
+        <!-- remove list -->
+        <referenceBlock name="register-link" remove="true" /> <!-- remove reg link from the top-->
+        <referenceBlock name="page.main.title" remove="true" />
+        <!--        <referenceBlock name="report.bugs" remove="true" />-->
+        <!--        <referenceBlock name="top.search" remove="true" />-->
+        <!--        <referenceContainer name="page-footer" remove="true" />-->
+        <!--        <referenceContainer name="footer-container" remove="true" />-->
+        <!-- enddddd-->
+
+
     </body>
 </page>
