@@ -9,6 +9,52 @@
                 <argument name="logo_img_height" xsi:type="number">10</argument>
             </arguments>
         </referenceBlock>
+        <!--    created empty container -->
+        <referenceContainer name="main">
+            <container name="some.container" as="someContainer" label="Some Container" htmlTag="div" htmlClass="some-container" after="-">
+                <block class="Magento\Framework\View\Element\Text">
+                    <arguments>
+                        <argument name="text" xsi:type="string">Empty Main  Container</argument>
+<!--                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> -->
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <!--  added some container (with a block from app/code/navMenu/block and template) to the header top div class="panel header"      -->
+        <referenceContainer name="header.panel">
+            <container name="some.container.top" as="someContainerTop" label="Some Container Top" htmlTag="div" htmlClass="some-container-top" after="-">
+                <block class="Elogic\NavMenu\Block\Display" name="helloworld_display" template="Elogic_NavMenu::sayhello.phtml" />
+            </container>
+        </referenceContainer>
+
+
+        <!--block after footer class="page-footer-->
+<!--        <referenceContainer name="before.body.end">-->
+<!--            <container name="some.footer.container2" label="some.footer.container2" htmlTag="div" htmlClass="some-footer-container2" before="-">-->
+<!--                <block class="Magento\Framework\View\Element\Text">-->
+<!--                    <arguments>-->
+<!--                        <argument name="text" xsi:type="string">Empty2  Before Footer Container</argument>-->
+<!--                        &lt;!&ndash;                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> &ndash;&gt;-->
+<!--                    </arguments>-->
+<!--                </block>-->
+<!--            </container>-->
+<!--        </referenceContainer>-->
+        <!--     end                   -->
+
+        <!-- last element of  div class page-bottom       -->
+<!--        <referenceContainer name="page.bottom.container">-->
+<!--            <container name="some.footer.container3" label="some.footer.container3" htmlTag="div" htmlClass="some-footer-container3" after="-">-->
+<!--                <block class="Magento\Framework\View\Element\Text">-->
+<!--                    <arguments>-->
+<!--                        <argument name="text" xsi:type="string">Empty3  Before Footer Container</argument>-->
+<!--                        &lt;!&ndash;                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> &ndash;&gt;-->
+<!--                    </arguments>-->
+<!--                </block>-->
+<!--            </container>-->
+<!--        </referenceContainer>-->
+        <!--   end  created empty container -->
+
 
         <!-- created a new container and place logo and nav sections to him-->
         <container name="logo.menu.container" as="logomenuContainer" label="Logo Menu Container" htmlTag="div" htmlClass="logo-menu-container">
@@ -17,6 +63,7 @@
         <move element="navigation.sections" destination="logo.menu.container" after="-" />
         <move element="logo.menu.container" destination="header-wrapper" />
         <!-- enddddd-->
+
 
         <!-- remove list -->
         <referenceBlock name="register-link" remove="true" /> <!-- remove reg link from the top-->
