@@ -10,5 +10,9 @@
         <!--moved pdp title to our new element that we created here -->
         <move element="page.main.title" destination="some.container.for.title" />
 
+        <!--moved price div to the bottom -->
+        <move element="product.info.price" destination="product.info.main" after="-" />
+
+
     </body>
 </page>
