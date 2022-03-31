@@ -9,18 +9,8 @@
                 <argument name="logo_img_height" xsi:type="number">10</argument>
             </arguments>
         </referenceBlock>
-        <!--    created empty container -->
-        <referenceContainer name="main">
-            <container name="some.container" as="someContainer" label="Some Container" htmlTag="div" htmlClass="some-container" after="-">
-                <block class="Magento\Framework\View\Element\Text">
-                    <arguments>
-                        <argument name="text" xsi:type="string">Empty Main  Container</argument>
-<!--                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> -->
-                    </arguments>
-                </block>
-            </container>
-        </referenceContainer>
 
+        <!-- when you create here new containers, it will create a new container in every page         -->
         <!--  added some container (with a block from app/code/navMenu/block and template) to the header top div class="panel header"      -->
         <referenceContainer name="header.panel">
             <container name="some.container.top" as="someContainerTop" label="Some Container Top" htmlTag="div" htmlClass="some-container-top" after="-">

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--    created empty container only in homepage -->
+        <referenceContainer name="main">
+            <container name="some.container" as="someContainer" label="Some Container" htmlTag="div" htmlClass="some-container" after="-">
+                <block class="Magento\Framework\View\Element\Text">
+                    <arguments>
+                        <argument name="text" xsi:type="string">Empty Main  Container</argument>
+                        <!--                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> -->
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+
+
+    </body>
+</page>
