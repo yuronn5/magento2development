@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--    created empty container on pdp to place here some info -->
+        <referenceContainer name="product.info.media">
+            <container name="some.container.for.title" as="someContainerfortitle" label="Some Container for title" htmlTag="div" htmlClass="some-container-for-title" before="-">
+            </container>
+        </referenceContainer>
+
+        <!--moved pdp title to our new element that we created here -->
+        <move element="page.main.title" destination="some.container.for.title" />
+
+    </body>
+</page>

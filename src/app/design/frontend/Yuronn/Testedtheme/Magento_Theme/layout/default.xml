@@ -57,7 +57,7 @@
 
         <!-- remove list -->
         <referenceBlock name="register-link" remove="true" /> <!-- remove reg link from the top-->
-        <referenceBlock name="page.main.title" remove="true" />
+<!--        <referenceBlock name="page.main.title" remove="true" />-->
         <!--        <referenceBlock name="report.bugs" remove="true" />-->
         <!--        <referenceBlock name="top.search" remove="true" />-->
         <!--        <referenceContainer name="page-footer" remove="true" />-->

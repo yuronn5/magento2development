@@ -13,7 +13,8 @@
             </container>
         </referenceContainer>
 
-
+        <!--  removed title only in homepage      -->
+        <referenceBlock name="page.main.title" remove="true" />
 
     </body>
 </page>
