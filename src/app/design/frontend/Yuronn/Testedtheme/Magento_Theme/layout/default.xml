@@ -65,5 +65,13 @@
         <!-- enddddd-->
 
 
+<!--      my container for google maps  -->
+        <container name="main.map.container" as="MainMapContaine" label="Main Map Container" htmlTag="div" htmlClass="main-map-container">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="mymapblock" template="Magento_Theme::myMaps.phtml" />
+        </container>
+<!--        -->
+
+
     </body>
 </page>

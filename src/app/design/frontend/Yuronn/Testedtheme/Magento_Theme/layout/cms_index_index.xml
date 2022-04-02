@@ -6,7 +6,7 @@
             <container name="some.container" as="someContainer" label="Some Container" htmlTag="div" htmlClass="some-container" after="-">
                 <block class="Magento\Framework\View\Element\Text">
                     <arguments>
-                        <argument name="text" xsi:type="string">Empty Main  Container</argument>
+                        <argument name="text" xsi:type="string">Empty Main  Container (created by block argument html)</argument>
                         <!--                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> -->
                     </arguments>
                 </block>
