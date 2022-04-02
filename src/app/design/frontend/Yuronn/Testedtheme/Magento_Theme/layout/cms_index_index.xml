@@ -10,6 +10,8 @@
                         <!--                    <argument name="text" xsi:type="string"><![CDATA[&nbsp;]]></argument> -->
                     </arguments>
                 </block>
+<!--                added custom div by block and phtml !!!-->
+                <block class="Magento\Framework\View\Element\Template" name="customtext" template="Magento_Theme::customtext.phtml" />
             </container>
         </referenceContainer>
 
