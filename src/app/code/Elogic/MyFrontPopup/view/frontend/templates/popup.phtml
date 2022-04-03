@@ -1,0 +1,24 @@
+<!--first popup-->
+<button id="yuronn_popup">Elogic time</button>
+<div id="overlap_for_popup"></div>
+
+<!--second popup-->
+<div id="popup">Click me to toggle the popup!
+    <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div>
+
+
+<!--best practice to add js files-->
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "yurec-componente": {
+                   "component": "Elogic_MyFrontPopup/js/myPopup"
+                }
+            }
+        }
+    }
+}
+</script>

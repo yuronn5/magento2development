@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content">
+            <container name="about.custom.container" as="aboutCustomContainer"
+                       label="About Custom Container" htmlTag="div" htmlClass="about-custom-container" after="-">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="yurets.simple.popup"
+                   template="Elogic_MyFrontPopup::popup.phtml"  after="-"/>
+            </container>
+        </referenceBlock>
+    </body>
+</page>
+
+
