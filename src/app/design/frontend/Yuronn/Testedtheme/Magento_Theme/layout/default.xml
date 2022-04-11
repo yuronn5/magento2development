@@ -72,6 +72,12 @@
         </container>
 <!--        -->
 
+        <!-- added new custom css class to block        -->
+        <referenceBlock name="footer_links" >
+            <arguments>
+                <argument name="css_class" xsi:type="string">footer custom links</argument>
+            </arguments>
+        </referenceBlock>
 
     </body>
 </page>
