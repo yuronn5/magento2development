@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+
+<!--    -->
+    <referenceBlock name="checkout.header.wrapper">
+        <container name="additional-block-wrapper"
+                   label="additional-block-wrapper" htmlTag="div" htmlClass="additional-block-wrapper">
+            <block class="Magento\Cms\Block\Block" name="custom-block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">custom-block-checkout</argument>
+                </arguments>
+            </block>
+        </container>
+    </referenceBlock>
+<!--    added a new block to the checkout page -->
+    <referenceContainer name="page.bottom.container">
+        <container name="custom-footer-wrapper" label="custom-footer-wrapper" htmlTag="div" htmlClass="custom-footer-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="custom-footer" template="Magento_Theme::checkout-footer-custom.phtml"/>
+        </container>
+    </referenceContainer>
+
+</body>
+</page>
+
