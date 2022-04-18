@@ -79,5 +79,9 @@
             </arguments>
         </referenceBlock>
 
+        <referenceContainer name="footer-bottom-content">
+            <block class="Magento\Framework\View\Element\Template" name="report.bugs.bottom" template="Magento_Theme::html/bugreport.phtml"/>
+        </referenceContainer>
+
     </body>
 </page>
