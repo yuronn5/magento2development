@@ -1,0 +1,31 @@
+<div class="liveExample" data-bind="scope:'yurec-component'">
+    <div class="knock-title">Chosee what iphone do you want to buy and we will contact to you</div>
+    <form data-bind="submit:addItem">
+        Add item: <input type="text" data-bind='value:itemToAdd, valueUpdate: "afterkeydown"' />
+        <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+    </form>
+    <p>Your choise:</p>
+    <select multiple="multiple" height="5" data-bind="options:allItems, selectedOptions:selectedItems"> </select>
+
+    <div>
+        <button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
+        <button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
+    </div>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "yurec-component": {
+                   "component": "Elogic_UiComponentDemo/js/component"
+                }
+            }
+        }
+    }
+}
+
+</script>
