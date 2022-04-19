@@ -333,6 +333,7 @@ return [
         'Elogic_ContactFormRemoveTestThings' => 1,
         'Elogic_CustomErrorPage' => 1,
         'Elogic_MyAcordeon' => 1,
+        'Elogic_MyAttbBack' => 1,
         'Elogic_MyController' => 1,
         'Elogic_MyFrontPopup' => 1,
         'Elogic_MySlider' => 1,
