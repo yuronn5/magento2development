@@ -340,6 +340,7 @@ return [
         'Elogic_MySlider' => 1,
         'Elogic_MyWidget' => 1,
         'Elogic_NavMenu' => 1,
+        'Elogic_SetGiftBySku' => 1,
         'Elogic_UiComponentDemo' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
