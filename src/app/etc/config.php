@@ -337,6 +337,7 @@ return [
         'Elogic_MyController' => 1,
         'Elogic_MyFrontPopup' => 1,
         'Elogic_MyMoveAttb' => 1,
+        'Elogic_MyProductColection' => 1,
         'Elogic_MySlider' => 1,
         'Elogic_MyWidget' => 1,
         'Elogic_NavMenu' => 1,
