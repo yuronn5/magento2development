@@ -7,6 +7,9 @@ $productCollection = $objectManager->create('Magento\Catalog\Model\ResourceModel
 $collection = $productCollection->addAttributeToSelect('*')
     ->load();
 
+?>
+<h2>This block is created by objectmanager</h2>
+<?php
 foreach ($collection as $product){
     echo 'Name  =  '.$product->getName().' ';
 }
