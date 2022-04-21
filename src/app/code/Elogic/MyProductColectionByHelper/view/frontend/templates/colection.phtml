@@ -1,0 +1,24 @@
+<?php
+$helper = $this->helper('Elogic\MyProductColectionByHelper\Helper\Data');
+$collection = $helper->getProductCollectionByCategories();
+
+?>
+<h2>This block is created by helper</h2>
+<?php
+
+
+foreach ($collection as $product) {
+    $result = [
+        'id'        => $product->getId(),
+        '_sku'      => $product->getSku(),
+        'product_url' => $product->getProductUrl($product),
+        'title'     => $product->getName(),
+        'raw_price' => $product->getPrice()
+    ];
+    ?>
+    <span class="price">
+<?= $result['raw_price'] ?>
+</span>
+    <?php
+}
+?>
