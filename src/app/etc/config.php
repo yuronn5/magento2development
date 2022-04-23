@@ -343,6 +343,7 @@ return [
         'Elogic_MySlider' => 1,
         'Elogic_MyWidget' => 1,
         'Elogic_NavMenu' => 1,
+        'Elogic_NewPage' => 1,
         'Elogic_SetGiftBySku' => 1,
         'Elogic_Sku' => 1,
         'Elogic_UiComponentDemo' => 1,
