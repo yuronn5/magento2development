@@ -41,3 +41,14 @@
 //         console.log(element);
 //     }
 // })
+
+
+// 6) with require js config
+
+define(function () {
+    'use strict';
+
+    return function (config, element){
+        console.log(element);
+    }
+})

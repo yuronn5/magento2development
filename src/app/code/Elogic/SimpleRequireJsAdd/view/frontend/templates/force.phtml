@@ -54,3 +54,17 @@
 <!-- 5 alternative - data mage init-->
 <!--<div id="testedRjs" data-mage-init='{"Elogic_SimpleRequireJsAdd/js/ola": {"base_url": "/"}}'></div>-->
 
+
+<!--6) require js config (added require-config.js-->
+<div id="testedRjs"></div>
+
+<script type="text/x-magento-init">
+    {
+        "#testedRjs": {
+            "coffee": {
+                "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
+            }
+        }
+    }
+</script>
+
