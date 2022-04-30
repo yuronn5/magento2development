@@ -348,6 +348,7 @@ return [
         'Elogic_SetGiftBySku' => 1,
         'Elogic_SimpleRequireJsAdd' => 1,
         'Elogic_Sku' => 1,
+        'Elogic_TranslationModule' => 1,
         'Elogic_UiComponentDemo' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
