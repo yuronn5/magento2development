@@ -52,3 +52,11 @@ define(function () {
         console.log(element);
     }
 })
+
+
+// 7) load module before another one
+// define(function () {
+//     'use strict';
+//
+//     console.log('---module is loaded before compare products ---');
+// })
