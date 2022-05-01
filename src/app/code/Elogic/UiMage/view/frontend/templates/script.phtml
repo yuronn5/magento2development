@@ -19,6 +19,12 @@
 }
 </script>
 <!--1) first ui component-->
+<!--<div data-bind="scope: 'exampleUiComponent'">-->
+<!--    <h3 data-bind="text: label"></h3>-->
+<!--</div>-->
+
+
+<!--2) add template -->
 <div data-bind="scope: 'exampleUiComponent'">
-    <h3 data-bind="text: label"></h3>
+    <!-- ko template: getTemplate() --><!-- /ko -->
 </div>
