@@ -19,6 +19,22 @@
 }
 </script>
 <!--1) simple call-->
+<!--<div data-bind="scope: 'startSimple'">-->
+<!--    <h2 data-bind="text: title"></h2>-->
+<!--</div>-->
+
+
+<!--3) observable array-->
 <div data-bind="scope: 'startSimple'">
-    <h2 data-bind="text: title"></h2>
+    <h3 data-bind="text: label"></h3>
+    <table data-bind="foreach: items">
+        <tr>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: qty"></td>
+            <td data-bind="text: price"></td>
+            <td data-bind="text: $parent.rowTotal($data)"></td>
+        </tr>
+    </table>
+    <div>Additional charge: <span data-bind="text: additional_charge"></span></div>
+    <strong>Total: <span data-bind="text: total()"></span></strong>
 </div>
