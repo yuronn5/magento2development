@@ -334,6 +334,7 @@ return [
         'Elogic_Con' => 1,
         'Elogic_ContactFormRemoveTestThings' => 1,
         'Elogic_CustomErrorPage' => 1,
+        'Elogic_KoMage' => 1,
         'Elogic_MyAcordeon' => 1,
         'Elogic_MyAttbBack' => 1,
         'Elogic_MyController' => 1,
