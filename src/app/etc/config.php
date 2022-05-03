@@ -352,6 +352,7 @@ return [
         'Elogic_TranslationModule' => 1,
         'Elogic_UiComponentDemo' => 1,
         'Elogic_UiMage' => 1,
+        'Elogic_Weather' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
         'Klarna_Kp' => 1,

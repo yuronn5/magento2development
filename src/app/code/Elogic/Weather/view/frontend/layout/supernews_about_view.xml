@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content">
+            <container name="about.custom.container.weather" as="aboutCustomContainerWeather"
+                       label="About Custom Container Weather"
+                       htmlTag="div"
+                       htmlClass="about-custom-container-weather"
+                       after="-">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="yurets.simple.weather"
+                   template="Elogic_Weather::popup.phtml"  after="-"/>
+            </container>
+        </referenceBlock>
+    </body>
+</page>
