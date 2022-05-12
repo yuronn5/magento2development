@@ -343,6 +343,7 @@ return [
         'Elogic_MyProductColection' => 1,
         'Elogic_MyProductColectionByHelper' => 1,
         'Elogic_MySlider' => 1,
+        'Elogic_MyTaskListJs' => 1,
         'Elogic_MyWidget' => 1,
         'Elogic_NavMenu' => 1,
         'Elogic_NewPage' => 1,
