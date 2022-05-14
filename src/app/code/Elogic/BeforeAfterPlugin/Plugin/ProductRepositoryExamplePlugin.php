@@ -1,6 +1,6 @@
 <?php
 
-namespace Elogic\BeforePlugin\Plugin;
+namespace Elogic\BeforeAfterPlugin\Plugin;
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Psr\Log\LoggerInterface;
@@ -23,6 +23,19 @@ class ProductRepositoryExamplePlugin
         $forceReload = false)
     {
         $this->logger->info('Before get product by Id msg' . $productId);
+        return [$productId, $editMode, $storeId, $forceReload];
+    }
+
+    public function afterGetById(
+        ProductRepositoryInterface $subject,
+        \Magento\Catalog\Api\Data\ProductInterface $result,
+        $productId,
+        $editMode = false,
+        $storeId = null,
+        $forceReload = false)
+    {
+        $this->logger->info('after get product by Id msg' . $result->getId());
+        return $result;
     }
 
 }
