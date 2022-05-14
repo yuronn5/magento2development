@@ -331,7 +331,7 @@ return [
         'Dotdigitalgroup_EmailGraphQl' => 1,
         'Dotdigitalgroup_Sms' => 1,
         'Elogic_Ajaxtutorial' => 1,
-        'Elogic_BeforeAfterPlugin' => 1,
+        'Elogic_BeforeAfterPlugin' => 0,
         'Elogic_Con' => 1,
         'Elogic_ContactFormRemoveTestThings' => 1,
         'Elogic_CustomErrorPage' => 1,
