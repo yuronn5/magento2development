@@ -337,6 +337,7 @@ return [
         'Elogic_CustomErrorPage' => 1,
         'Elogic_KoMage' => 1,
         'Elogic_ModelModule' => 1,
+        'Elogic_ModelModuleViewWithBlock' => 1,
         'Elogic_MyAcordeon' => 1,
         'Elogic_MyAttbBack' => 1,
         'Elogic_MyController' => 1,
