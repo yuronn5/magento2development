@@ -335,6 +335,7 @@ return [
         'Elogic_Con' => 1,
         'Elogic_ContactFormRemoveTestThings' => 1,
         'Elogic_CustomErrorPage' => 1,
+        'Elogic_EventObserver' => 1,
         'Elogic_KoMage' => 1,
         'Elogic_ModelModule' => 1,
         'Elogic_ModelModuleViewWithBlock' => 1,
