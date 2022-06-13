@@ -1,0 +1,13 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+         <table name="test_table">
+            <column xsi:type="int" name="test_id" unsigned="true" nullable="false" identity="true" comment="Grid Record Id"/>
+            <column xsi:type="varchar" name="title" nullable="false" length="50" comment="Author"/>
+             <constraint xsi:type="primary" referenceId="PRIMARY">
+                <column name="test_id"/>
+            </constraint>
+            <constraint xsi:type="unique" referenceId="UNIQUE">
+                <column name="test_id"/>
+            </constraint>
+         </table>
+</schema>
